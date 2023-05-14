@@ -1,0 +1,21 @@
+@use 'font';
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: font.$font;
+  font-size: 1.125rem;
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  text-decoration: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.25;
+}
