@@ -1,0 +1,19 @@
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+  margin-inline: auto; 
+  bottom: 1rem; 
+  position: absolute; 
+  left: 50%;
+  transform: translateX(-50%);
+
+  @media(max-height: 53.125rem){
+    bottom: auto;
+    margin-top: 4rem;
+  }
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+  text-decoration: underline;
+}

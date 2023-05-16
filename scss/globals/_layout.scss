@@ -1,8 +1,35 @@
+@use 'color' as c;
+
+$breakpoints: (
+  'medium': '40em',
+  'large': '60em',
+  'xlarge': '87.5em',
+);
+
+@mixin breakpoint($size) {
+  @media (min-width: map-get($breakpoints, $size)) {
+    @content;
+  }
+}
+
+
 main {
   display: flex;
   flex-direction: column;
 
-  @media (min-width= 375px) {
-    
+  @include breakpoint(large) {
+    flex-direction: row;
+    margin: auto;
+    margin-top: max(1vh, 10rem);
+    width: 46rem;
+    height: 32rem;
+    // border: 2px solid c.$cobaltBlue;
+    border-radius: 2rem;
+    box-shadow: 0  1rem 2rem 0rem hsla(241, 81%, 54%, 0.1);
+
+    // &::before {
+    //   content: '';
+    //   filter: drop-shadow(0 1rem 2rem hsla(241, 81%, 54%, 1));
+    // }
   }
 }

@@ -5,26 +5,39 @@
   flex-direction: column;
   margin-top: 1.875rem;
   margin-inline: 2rem;
+  align-content: center;
+
+  @include g.breakpoint(large) {
+    margin-left: 2.625rem;
+    margin-right: 2.4375rem;
+  }
 
   &-header {
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 800;
     color: g.$darkGrayBlue;
     margin-bottom: 0.3125rem;
+
+    @include g.breakpoint(large){
+      font-size: 1.5rem;
+    }
   }
 
   &-item {
     display: flex;
     flex-direction: row;
-    align-items: centers;
     justify-content: space-between;
     min-width: 15rem;
+    // max-width: 20rem;
     padding: 1rem;
     font-size: 1rem;
     border-radius: 0.5rem;
     margin-top: 1.25rem;
-
-
+    
+    @include g.breakpoint(large){
+      width: 17.875rem;
+      font-size: 1.125rem;
+    }
 
     &-title {
       display: flex;
@@ -40,9 +53,6 @@
       gap: 0.5rem;
       color: g.$darkGrayBlue;
     }
-
-
-
   }
 
   &-button {
@@ -50,10 +60,11 @@
     color: g.$paleBlue;
     margin-top: 1.5rem;
     margin-bottom: 0.5rem;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     border-radius: 50ch;
     text-align: center;
+    min-width: 15rem;
+    // max-width: 20rem;
 
     &:hover {
       background: g.$gradient-background;
