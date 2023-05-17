@@ -12,6 +12,18 @@ $breakpoints: (
   }
 }
 
+body { 
+  min-height: 100vh;
+  display: block; 
+  // min-width: 100vw;
+  // text-align: center; 
+  align-items: center;
+
+  @include breakpoint(large){
+    display: flex;
+  }
+}
+
 
 main {
   display: flex;
@@ -20,7 +32,7 @@ main {
   @include breakpoint(large) {
     flex-direction: row;
     margin: auto;
-    margin-top: max(1vh, 10rem);
+    // margin-top: min(1vh, 10rem);
     width: 46rem;
     height: 32rem;
     // border: 2px solid c.$cobaltBlue;

@@ -9,7 +9,11 @@
 
   @media(max-height: 53.125rem){
     bottom: auto;
-    margin-top: 4rem;
+    margin-top: 2rem;
+  }
+
+  @media(min-width: 60rem){
+    bottom: 1rem;
   }
 }
 
