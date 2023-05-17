@@ -119,6 +119,7 @@ main {
 @media (min-width: 60em) {
   .result-header {
     margin-top: 2.875rem;
+    font-size: 1.5rem;
   }
 }
 .result-circle {
